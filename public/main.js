@@ -20,7 +20,7 @@ getJSON.onclick = ()=>{
     request.open('get','/5.json')
     request.onreadystatechange = () =>{
         if(request.readyState === 4 && request.status === 200){
-            const bool = JSON.parse(request.response);
+            const object = JSON.parse(request.response);
             myName.textContent = object.name
         }
     }
